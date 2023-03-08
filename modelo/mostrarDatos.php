@@ -1,3 +1,5 @@
+
+
 <?php
 
     
@@ -47,4 +49,9 @@
     }
     echo $tabla.$datosTabla.'</tbody></table>';
 ?>
+
+
+<script>
+
+</script>
 

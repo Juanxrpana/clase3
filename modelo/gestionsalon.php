@@ -1,3 +1,4 @@
+
 <?php
 //llamda al archivo que contiene la clase
 //datos, en ella posteriormente se colcora el codigo
@@ -100,12 +101,12 @@ class registro_salon extends Conexion{
 	  }
 
 
-	function modificar(){
+	function modificarDatos(){
 		$co = $this->conecta();
 		$co->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		if($this->existe($this->idSalon)){
 			try {
-					$co->query("Update empleados set
+					$co->query("Update salon set
 					    idSalon = '$this->idSalon',
                         NombreSalon = '$this->NombreSalon',
                         CantidadPersonasSalon = '$this->CantidadPersonasSalon',
@@ -124,7 +125,7 @@ class registro_salon extends Conexion{
 
 	}
 
-	function eliminar(){
+	function eliminarDatos(){
 		$co = $this->conecta();
 		$co->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		if($this->existe($this->idSalon)){

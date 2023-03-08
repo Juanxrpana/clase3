@@ -3,8 +3,13 @@
 <?php require_once("comunes/barranotificacion.php")?>
 
 
+
+
 <!DOCTYPE html>
 <head>
+
+
+
 <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
     <title>Gestion Salon</title>
 </head>

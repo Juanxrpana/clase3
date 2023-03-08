@@ -37,9 +37,8 @@ require_once("modelo/".$pagina.".php");
               echo  $o->incluirsalon();
             }
             elseif($accion=='modificar'){
-              echo  $o->modificar();
-            }
-        
+              echo  $o->modificarDatos();
+            }       
         exit;
     }    require_once("vista/".$pagina.".php");
 }

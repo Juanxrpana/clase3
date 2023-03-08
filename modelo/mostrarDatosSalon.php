@@ -1,3 +1,4 @@
+
 <?php
 
     
@@ -34,8 +35,9 @@
                               
                                 <td>
 
-                                <a class="btn btn-success btn-sm"  data-toggle="modal" data-target="#ModalSalon" onclick=" modificarDatos('.$value['idSalon'].')"><i class="fa-solid fa-user-pen"></i></a>
-                                <a class="btn btn-danger btn-sm" onclick="eliminarDatos('.$value['idSalon'].')"><i class="fa-solid fa-user-xmark"></i></a>
+                                <a id="modify" class="btn btn-success btn-sm" data-toggle="modal" data-target="#ModalSalon" data-id="'.$value['idSalon'].'"onclick="modificarDatos('.$value['idSalon'].')"><i class="fa-solid fa-user-pen"></i></a>
+                                <a class="btn btn-danger btn-sm" data-id="'.$value['idSalon'].'" onclick="eliminarDatos('.$value['idSalon'].')"><i class="fa-solid fa-user-xmark"></i></a>
+
                                 </td>
                                 
                                
